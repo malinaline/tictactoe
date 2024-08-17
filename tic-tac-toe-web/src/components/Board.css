@@ -1,0 +1,45 @@
+/* src/components/Board.css */
+
+.board-row {
+  display: flex;
+}
+
+.board {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #00000026;
+  background-color: #ffffff;
+  border-radius: 12px; /* Rundade hörn på spelbrädet */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Lägger till en skugga för att ge ett lyft */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff26;
+  border: 2px solid #00000096;
+  font-size: 3rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease;
+  border-radius: 8px; /* Rundade hörn på varje ruta */
+}
+
+.square:hover {
+  background-color: #ddd;
+  transform: scale(1.05); /* Lätt zoom-effekt vid hover */
+}
+
+.square:active {
+  transform: scale(0.95); /* Minskar storleken något när knappen trycks ner */
+}
+
+.board-row:not(:last-child) .square {
+  margin-bottom: 10px; /* Lägger till lite avstånd mellan raderna */
+}
+
+.board-row .square:not(:last-child) {
+  margin-right: 10px; /* Lägger till lite avstånd mellan rutorna i samma rad */
+}

@@ -1,0 +1,25 @@
+/* src/components/Square.css */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  transition: background-color 1s ease-in-out;
+  font-family: 'Roboto', sans-serif; /* Tillämpa Roboto-typsnittet */
+}
+
+.square-x {
+  color: #000000; /* Blå för X */
+}
+
+.square-o {
+  color: #000000; /* Röd för O */
+}
+
+.square:hover {
+  background-color: #ddd;
+}

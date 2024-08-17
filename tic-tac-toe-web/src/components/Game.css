@@ -1,0 +1,71 @@
+/* src/components/Game.css */
+
+.game {
+  display: flex;
+  flex-direction: column; /* Standard: placera informationen under brädet */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+  margin-bottom: 20px; /* Ge lite utrymme under brädet */
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrerar innehållet under brädet på mindre skärmar */
+  text-align: center; /* Centrerar texten */
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.game-info div {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.game-info button {
+  padding: 10px 15px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-info button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.game-info button:active {
+  transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+  .game {
+    flex-direction: row; /* På större skärmar placeras informationen bredvid brädet */
+  }
+
+  .game-board {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .game-info {
+    align-items: flex-start; /* Justerar till vänster på större skärmar */
+    text-align: left; /* Justerar texten till vänster */
+    width: auto; /* Återställ bredden till auto på större skärmar */
+  }
+}
