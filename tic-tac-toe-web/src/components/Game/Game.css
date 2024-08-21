@@ -1,4 +1,3 @@
-/* src/components/Game.css */
 
 .game {
   display: flex;
@@ -27,7 +26,7 @@
 }
 
 .game-info div {
-  margin-bottom: 20px;
+  margin: 10px;
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
@@ -35,6 +34,7 @@
 
 .game-info button {
   padding: 10px 15px;
+  margin: 15px;
   background-color: #007aff;
   color: white;
   border: none;
@@ -53,9 +53,32 @@
   transform: translateY(1px);
 }
 
+.game-info select {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-info select:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+  outline: none;
+}
+
+.game-info select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
 @media (min-width: 768px) {
-  .game {
-    flex-direction: row; /* På större skärmar placeras informationen bredvid brädet */
+  .game {/* På större skärmar placeras informationen bredvid brädet */
   }
 
   .game-board {
@@ -64,8 +87,8 @@
   }
 
   .game-info {
-    align-items: flex-start; /* Justerar till vänster på större skärmar */
-    text-align: left; /* Justerar texten till vänster */
-    width: auto; /* Återställ bredden till auto på större skärmar */
+    align-items: flex-start;
+    text-align: left;
+    width: auto;
   }
 }

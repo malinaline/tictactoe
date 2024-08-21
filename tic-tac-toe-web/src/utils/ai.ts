@@ -1,4 +1,4 @@
-// src/utils/ai.ts
+
 
 export const calculateWinner = (squares: string[]): string | null => {
   const lines = [
@@ -72,4 +72,24 @@ export const findBestMove = (squares: string[]): number => {
     }
   }
   return bestMove;
+};
+
+// Ny logik för enkel svårighetsgrad
+export const findRandomMove = (squares: string[]): number => {
+  const availableMoves = squares
+    .map((square, index) => (square === "" ? index : -1))
+    .filter((index) => index !== -1);
+  const randomIndex = Math.floor(Math.random() * availableMoves.length);
+  return availableMoves[randomIndex];
+};
+
+// Ny logik för medelsvår svårighetsgrad
+export const findMediumMove = (squares: string[]): number => {
+  const bestMove = findBestMove(squares);
+  const randomChance = Math.random();
+  if (randomChance > 0.5) {
+    return bestMove;
+  } else {
+    return findRandomMove(squares);
+  }
 };
