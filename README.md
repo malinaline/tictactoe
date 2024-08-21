@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Web Application
 
-This is a Tic-Tac-Toe game built with React. The game includes different difficulty levels for the computer opponent.
+This is a Tic-Tac-Toe game built with React-Typescript and Electron. The game includes different difficulty levels for the computer opponent.
 
 ## Prerequisites
 
