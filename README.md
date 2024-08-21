@@ -23,3 +23,8 @@ npm start
 cd desktop
 npm start
 ```
+
+## To-do
+
+- Gör appen produktionsredo
+- Lägg till fler tester
