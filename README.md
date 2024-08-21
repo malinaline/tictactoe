@@ -16,7 +16,7 @@ Follow these steps to set up and run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tic-tac-toe-web.git
+git clone https://github.com/malinaline/tic-tac-toe-web.git
 cd tic-tac-toe-web
 npm start
 
